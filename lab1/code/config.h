@@ -6,6 +6,7 @@
 #include<WinSock2.h>
 #include<WS2tcpip.h>
 #pragma comment(lib, "ws2_32.lib")
+
 #define PORT 8000
 #define BUFFER_SIZE 1024
 #define MAX_CLIENT 6
@@ -72,8 +73,8 @@ DWORD WINAPI CreateThread(LPVOID lpParameter) {
 				return 0;
 			}
 			curr();
-			cout << "Client@" << clients[index] << ": " << BUF_R << "--" << curr_time << endl;
-			sprintf_s(BUF_S, sizeof(BUF_S), "Client@%d: %s# %s", clients[index], BUF_R, curr_time);
+			cout << "[" << curr_time << "]" << "Client@" << clients[index] << ": " << BUF_R << endl;
+			sprintf_s(BUF_S, sizeof(BUF_S), "[%s]Client@%d: %s", curr_time, clients[index], BUF_R);
 			for (int i = 0; i < clients_num; i++) {
 				if (client_online[i] == 1) {
 					send(clients[i], BUF_S, sizeof(BUF_S), 0);
@@ -105,4 +106,3 @@ DWORD WINAPI ReceiveThread() //接收消息线程
 	Sleep(1000);
 	return 0;
 }
-

@@ -329,33 +329,33 @@ int main()
 
 ### 3.1 server创建
 
-![2](X:\c++\network_lab\lab1\src\2.png)
+![2](./src/2.png)
 
 ### 3.2 用户接入
 
-![2](X:\c++\network_lab\lab1\src\3.png)
+![2](./src/3.png)
 
 ### 3.3 多用户接入
 
-![2](X:\c++\network_lab\lab1\src\4.png)
+![2](./src/4.png)
 
 ### 3.4 用户溢出
 
-![2](X:\c++\network_lab\lab1\src\5.png)
+![2](./src/5.png)
 
 ### 3.5 发送/广播
 
-![2](X:\c++\network_lab\lab1\src\6.png)
+![2](./src/6.png)
 
 ### 3.6 用户退出
 
-![2](X:\c++\network_lab\lab1\src\7.png)
+![2](./src/7.png)
 
 ## 4 WireShark监听
 
-![1](X:\c++\network_lab\lab1\src\9.png)
+![1](./src/9.png)
 
-![1](X:\c++\network_lab\lab1\src\8.png)
+![1](./src/8.png)
 
 ## 5 实验心得
 
